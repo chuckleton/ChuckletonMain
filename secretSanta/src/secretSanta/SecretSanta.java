@@ -18,7 +18,7 @@ public class SecretSanta {
 		in = new Input();
 		boolean finished = false;
 		while(!finished) {
-			boolean done = true;
+			/*boolean done = true;
 			while(done) {
 				String name = in.getName();
 				String email = in.getEmail();
@@ -26,7 +26,16 @@ public class SecretSanta {
 				peeps.addPerson(name, email);
 				peeps.people.get(peeps.people.size() - 1).setExtra(extra);
 				done = in.done();
-			}
+			}*/
+			peeps.addPerson("Dits/Gwent",		"adityasadhu15@gmail.com");
+			peeps.addPerson("Jacob Pokryska",	"jacobpokryska@gmail.com");
+			peeps.addPerson("Bryce",			"bryceknagy@gmail.com");
+			peeps.addPerson("Josh Alpern",		"jpern1211@gmail.com");
+			peeps.addPerson("Danny",			"dkolano2@gmail.com");
+			peeps.addPerson("Jack Downey",		"jpidwaffle@gmail.com");
+			peeps.addPerson("Evan Giordano",	"evangiordano8@gmail.com");
+			peeps.addPerson("Isaac Pokryska",	"isaacpokryska@gmail.com");
+			peeps.addPerson("Dyl",				"dylanmarkulec@gmail.com");
 		
 			for(Person person : peeps.people) {
 				person.printPerson();
@@ -38,10 +47,6 @@ public class SecretSanta {
 				peeps.people = new ArrayList<Person>();
 			}
 		}
-		//peeps.addPerson("danny","dkolano2@gmail.com");
-		//peeps.addPerson("loker","dkolano2@gmail.com");
-		//peeps.addPerson("suker","dkolano2@gmail.com");
-		//peeps.addPerson("chuckler","dwk2117@columbia.edu");
 		
 		match = new Matcher(peeps);
 		

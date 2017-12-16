@@ -17,11 +17,11 @@ public class MessageCreator {
 	
 	void sendMessages() {
 		for(Person peep : peeps.people) {
-			String bodyText = "<h1>" + peep.name + ", Your Secret Santa Match is " + peep.match.name;
+			String bodyText = "<h1>" + peep.name + ", Your Christmas Memorial Secret Santa Match is " + peep.match.name;
 			if(peep.match.extras != null) {
 				bodyText = bodyText + "<br><br>" + peep.match.name + " wanted to tell you: " + peep.match.extras;
 			}
-			bodyText += "<br><br>Merry ChristmaHanuKwanzaa!" + "</h1>";
+			bodyText += "<br><br>Religion is the sign of the oppressed creature, the sentiment of a heartless world, and the soul of soul-less conditions. It is the opium of the people.<br>-Karl Markulec" + "</h1>";
 			//bodyText = readFile("html1","ANSI");
 			send.sendMessage(peep.address,"Your Secret Santa Match",bodyText);
 			System.out.println("Sent a message");
